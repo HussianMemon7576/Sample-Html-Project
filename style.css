@@ -1,0 +1,55 @@
+body {
+    text-align: center;
+}
+
+.maintitle {
+    height: 15vh;
+    border: 2px solid white;
+    background-color: orange;
+    text-align: center;
+    border-radius: 20px;
+    transition: transform 1s ease;
+
+}
+
+.maintitle h1 {
+    color: white;
+    padding: 20px;
+}
+
+.maintitle:hover {
+    transform: scale(0.6);
+    color: red;
+}
+
+.maintitle h1:hover {
+    transform: scale(0.8);
+    color: yellow;
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    background-color: red;
+    position: relative;
+    /* top: 100px; */
+    top: 100px;
+    animation: jump 0.4s infinite ease-in-out;
+}
+
+@keyframes jump {
+
+    0%,
+    100% {
+        transform: rotate(360deg);
+        left: 100px;
+    }
+
+    50% {
+        transform: rotate(60deg);
+
+    }
+
+
+}
